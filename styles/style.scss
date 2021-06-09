@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.circle {
+  border-radius: 100%;
+  margin: 10px;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  &__red {
+    background-color: #cc1414;
+  }
+
+  &__blue {
+    background-color: #145ecc;
+  }
+
+  &__green {
+    background-color: #39cc14;
+  }
+
+  &__yellow {
+    background-color: #d7e42a;
+  }
+}
+
+.btn {
+  margin: 10px;
+  border-radius: 10px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: sans-serif;
+  color: white;
+
+  &__primary {
+    background: #01547a;
+  }
+
+  &__secondary {
+    background: #d42000;
+  }
+}
+
+.board {
+  height: 100vh;
+  width: 100vw;
+
+  &__header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+
+    h1 {
+      font-family: cursive;
+      font-size: 2.5rem;
+      color: #0091d4;
+    }
+  }
+
+  &__drawArea {
+    height: 500px;
+    padding: 1rem 40px;
+
+    &__canvas {
+      border: 2px solid #1d0f0f;
+      cursor: pointer;
+    }
+  }
+
+  &__options {
+    margin: auto;
+    margin-top: 1.5rem;
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      list-style: none;
+
+      &__element {
+        .options {
+          display: flex;
+          justify-content: space-evenly;
+
+          .color {
+            margin: 10px;
+            cursor: pointer;
+            height: 50px;
+            width: 40px;
+          }
+
+          input[type="range"]::-webkit-slider-thumb {
+            background-color: #145ecc;
+            border: 2px solid #145ecc;
+            border-radius: 100%;
+          }
+
+          input[type="range"]::-webkit-slider-runnable-track {
+            width: 100%;
+            cursor: pointer;
+            height: 5px;
+            border-radius: 10%;
+            background-color: #1d0f0f;
+          }
+
+          input[type="range"]::-moz-range-thumb {
+            background-color: #145ecc;
+            border: 2px solid #145ecc;
+            border-radius: 100%;
+            cursor: pointer;
+          }
+
+          input[type="range"]::-moz-range-track {
+            width: 100%;
+            cursor: pointer;
+            height: 5px;
+            border-radius: 10%;
+            background-color: #1d0f0f;
+          }
+
+          input[type="range"]::-ms-thumb {
+            background-color: #145ecc;
+            border: 2px solid #145ecc;
+            border-radius: 100%;
+            cursor: pointer;
+          }
+
+          input[type="range"]::-ms-track {
+            width: 100%;
+            cursor: pointer;
+            height: 5px;
+            border-radius: 10%;
+            background-color: #1d0f0f;
+          }
+        }
+      }
+    }
+  }
+}

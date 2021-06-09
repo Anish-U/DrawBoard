@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DrawBoard</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="board">
+      <div class="board__header">
+        <h1>DrawBoard</h1>
+      </div>
+      <div class="board__drawArea" id="drawArea">
+        <canvas id="canvas" class="board__drawArea__canvas"></canvas>
+      </div>
+      <div class="board__options">
+        <ul class="board__options__list">
+          <li class="board__options__list__element">
+            <div class="options">
+              <div class="btn btn__primary" id="undoBtn">Undo</div>
+              <div class="btn btn__secondary" id="clearBtn">Clear</div>
+            </div>
+          </li>
+          <li class="board__options__list__element">
+            <div class="options">
+              <div class="circle circle__red" data-color="red"></div>
+              <div class="circle circle__blue" data-color="blue"></div>
+              <div class="circle circle__green" data-color="green"></div>
+              <div class="circle circle__yellow" data-color="yellow"></div>
+              <input type="color" class="color" id="colorPicker" />
+            </div>
+          </li>
+          <li class="board__options__list__element">
+            <div class="options">
+              <input
+                type="range"
+                id="widthPicker"
+                min="1"
+                max="31"
+                step="3"
+                value="1"
+              />
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.circle {
+  border-radius: 100%;
+  margin: 10px;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+}
+
+.circle__red {
+  background-color: #cc1414;
+}
+
+.circle__blue {
+  background-color: #145ecc;
+}
+
+.circle__green {
+  background-color: #39cc14;
+}
+
+.circle__yellow {
+  background-color: #d7e42a;
+}
+
+.btn {
+  margin: 10px;
+  border-radius: 10px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: sans-serif;
+  color: white;
+}
+
+.btn__primary {
+  background: #01547a;
+}
+
+.btn__secondary {
+  background: #d42000;
+}
+
+.board {
+  height: 100vh;
+  width: 100vw;
+}
+
+.board__header {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.board__header h1 {
+  font-family: cursive;
+  font-size: 2.5rem;
+  color: #0091d4;
+}
+
+.board__drawArea {
+  height: 500px;
+  padding: 1rem 40px;
+}
+
+.board__drawArea__canvas {
+  border: 2px solid #1d0f0f;
+  cursor: pointer;
+}
+
+.board__options {
+  margin: auto;
+  margin-top: 1.5rem;
+}
+
+.board__options__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.board__options__list__element .options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.board__options__list__element .options .color {
+  margin: 10px;
+  cursor: pointer;
+  height: 50px;
+  width: 40px;
+}
+
+.board__options__list__element .options input[type="range"]::-webkit-slider-thumb {
+  background-color: #145ecc;
+  border: 2px solid #145ecc;
+  border-radius: 100%;
+}
+
+.board__options__list__element .options input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  cursor: pointer;
+  height: 5px;
+  border-radius: 10%;
+  background-color: #1d0f0f;
+}
+
+.board__options__list__element .options input[type="range"]::-moz-range-thumb {
+  background-color: #145ecc;
+  border: 2px solid #145ecc;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.board__options__list__element .options input[type="range"]::-moz-range-track {
+  width: 100%;
+  cursor: pointer;
+  height: 5px;
+  border-radius: 10%;
+  background-color: #1d0f0f;
+}
+
+.board__options__list__element .options input[type="range"]::-ms-thumb {
+  background-color: #145ecc;
+  border: 2px solid #145ecc;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.board__options__list__element .options input[type="range"]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  height: 5px;
+  border-radius: 10%;
+  background-color: #1d0f0f;
+}
